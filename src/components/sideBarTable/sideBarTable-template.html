@@ -1,0 +1,19 @@
+<aside>
+  <button class="btn btn-default" ng-click="vmS.getUsers()" ng-hide="vmS.disabled" ng-model="vmS.disabled">Get Users</button>
+  <table class="table table-hover table-bordered table-striped" ng-show="vmS.disabled">
+    <thead>
+      <tr ng-repeat="item in vmS.itemsHead">
+        <td>{{item.title}}</td>
+        <td>{{item.col1}}</td>
+        <td>{{item.col2}}</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in vmS.itemsBody">
+        <td>{{item.title}}</td>
+        <td>{{item.col1}}</td>
+        <td>{{item.col2}}</td>
+      </tr>
+    </tbody>
+  </table>
+</aside>
